@@ -1,0 +1,33 @@
+Juan Miguel Acosta Ortega
+Software Engineer
+Granada, Andalucía, Spain
+Email: acostaojuanmi@gmail.com
+GitHub: github.com/JuanmiAcosta
+LinkedIn: juan-miguel-acosta-ortega-a433191a8
+
+About Me
+Software Engineer passionate about delivering efficient software solutions. Currently focused on backend and cloud development, with an eagerness to explore diverse fields within the software industry. Strong problem-solving skills and a commitment to continuous learning.
+
+Education
+2021 – 2025 — Bachelor’s Degree in Computer Engineering, University of Granada, Granada, Spain. GPA: 8.4/10
+2019 – 2021 — Higher Technician in Telecommunications and Computer Systems. Graduated with Honors (Top of Class). Granada, Spain. GPA: 9.3/10
+
+Experience
+Sep. 2025 – Present — Junior Software Engineer, Bizneo HR (Madrid, Spain — Remote)
+After starting in the maintenance team, I now work in the development team, owning longer-term features and improvements. My work focuses on Elixir and Phoenix, with an emphasis on code quality, scalability, and database efficiency. I contribute across the full lifecycle of these features, from optimized Ecto queries and production data migrations to deployment and monitoring on AWS. I also collaborate closely with other engineers through Git-based workflows, merge requests, and code reviews.
+
+Mar 2025 – Aug 2025 — Software Engineer Intern, Real-Time Innovations, Granada, Spain
+Contributed to the development of a backend system for managing standard DDS data types, enhancing user experience and client onboarding to RTI Connext. Involved the use of cloud (AWS), backend technologies, and C/Python programming, and Agile/Scrum methodology.
+
+Projects
+TempusUGR — Final Degree Project awarded with Highest Honors. Microservices-based scheduling tool for students and teachers, developed over one year using Java and Spring Boot. Dockerized architecture, load balancing, robust authentication, service orchestration. Frontend with Angular. Deployed on a faculty server.
+Cachopan App — Buy-and-sell application for fish. Backend with Python/Flask; frontend with Flutter. Deployed and maintained.
+IronWar Fitness — Desktop app for a gym, Java and SQL; also an Arduino-based access control (C++). Deployed and maintained.
+
+Skills
+Coding: Java, Python, Elixir, C++, C
+Web Dev: Spring Boot, Flask, AWS, Phoenix
+Databases: MySQL, PostgreSQL, MongoDB, DynamoDB
+Tools: Git, Docker, Docker Compose, Bash
+Soft Skills: Problem-solving, adaptability, teamwork, decision-making
+Languages: Spanish (Native), English (B2 – FCE by Cambridge)

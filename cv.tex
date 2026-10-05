@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% Estilo y color
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% Paquetes y configuración
+\usepackage[top=0.8cm,bottom=0.8cm,left=1.5cm,right=1.5cm]{geometry}
+\setlength{\hintscolumnwidth}{2.4cm} % Ancho de la columna de etiquetas
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{cmap}
+\pdfgentounicode=1
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{tikz}
+\usepackage{enumitem}
+\setlist[itemize]{nosep,leftmargin=1.2em,topsep=1pt}
+
+% --- Harvard-like Section Titles with Line ---
+% Redefine the section style to include a bold title and a separating line
+\makeatletter
+\renewcommand{\section}[1]{%
+  \par\addvspace{2ex}% % Space before the section title
+  \phantomsection{}%
+  \addcontentsline{toc}{section}{#1}%
+  \centering{\LARGE\bfseries #1}% % The section title
+  \par\addvspace{0ex}% % Small space between title and line
+  \rule{\linewidth}{0.04em}% % The decorative line (width of text area, 0.08em thickness)
+  \par\addvspace{1ex}% % Space after the line and before the section content
+}
+\makeatother
+% --- End Harvard-like Section Titles with Line ---
+
+% Fecha en negrita y ligeramente más pequeña para entradas compactas
+\newcommand{\cvdate}[1]{\textbf{\footnotesize #1}}
+
+\renewcommand*{\namefont}{\fontsize{28}{30}\mdseries\upshape}
+
+% Datos personales
+\name{Juan Miguel}{Acosta Ortega}
+\title{Backend Software Engineer}
+\address{Granada, Andalucía, Spain}{}{}
+\phone[mobile]{+34 620 400 221}
+\email{acostaojuanmi@gmail.com}
+\homepage{github.com/JuanmiAcosta}
+\social[linkedin]{juan-miguel-acosta-ortega-a433191a8}
+
+% Comienzo del documento
+\begin{document}
+
+\makecvtitle
+\vspace{-1.4cm}
+
+
+% About Me con foto a la derecha
+\section{About Me}
+\noindent
+\begin{minipage}[c]{0.8\textwidth}
+Backend Software Engineer focused on building scalable web services, distributed systems and cloud solutions. Professional experience with \textbf{Elixir/Phoenix} in production and with \textbf{Java/Spring Boot} microservices architectures, complemented by \textbf{Python} backends on \textbf{AWS}. I care about clean, maintainable code and system reliability.
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+  \centering
+  % overlay: la foto no ocupa espacio; 0cm la centra entre los separadores
+  \begin{tikzpicture}[overlay]
+    \clip (0,-0.4cm) circle (1.2cm);
+    \node[anchor=center, yshift=-0.08cm] at (0,-0.4cm) {\includegraphics[width=2.6cm, trim=0 0.5cm 0 0.5cm, clip]{JUANMI.jpg}};
+  \end{tikzpicture}
+\end{minipage}
+\vspace{-0.2cm}
+
+\section{Experience}
+\cventry{\cvdate{Sep 2025 -- Present}}{Junior Software Engineer}{Bizneo HR}{Madrid, Spain (Remote)}{}{
+\parbox[t]{\linewidth}{\normalsize
+After starting in the maintenance team, I moved to the development team, taking ownership of longer-term features and improvements.
+\begin{itemize}
+  \item Develop, maintain and evolve backend services in \textbf{Elixir} and \textbf{Phoenix} using idiomatic functional patterns: new features, refactoring and bug fixing with a focus on code quality and scalability.
+  \item Build interactive, real-time features (e.g.\ chat) with \textbf{Phoenix LiveView}, and asynchronous background processing with \textbf{Oban} (workers, backfills, long-running jobs).
+  \item Write optimized \textbf{Ecto} queries and production data migrations on \textbf{PostgreSQL}; take part in deployments, monitoring and incident analysis on \textbf{AWS}.
+  \item Collaborate through \textbf{Git}-based workflows, merge requests and code reviews.
+\end{itemize}
+}
+}
+\cventry{\cvdate{Mar -- Aug 2025}}{Software Engineer Intern}{Real-Time Innovations (RTI)}{Granada, Spain}{}{
+\parbox[t]{\linewidth}{\normalsize
+Enhanced a backend system for managing standard DDS type information, improving its performance and accessibility and easing client onboarding to RTI Connext. Involved end to end, from requirements and design to development and testing, following \textbf{Agile/Scrum}.
+\begin{itemize}
+  \item Developed a serverless \textbf{REST API} in \textbf{Python} on \textbf{AWS Lambda} and \textbf{API Gateway}, using \textbf{ctypes} to interface with native \textbf{C} libraries.
+  \item Contributed to an administration \textbf{CLI} tool (argparse, lxml) and adapted an existing web interface to consume the new API.
+\end{itemize}
+}
+}
+\vspace{-0.3cm}
+
+\section{Projects}
+\cvitem{\textbf{TusDeCAs}}{
+SaaS web platform (\href{https://tusdecas.es}{tusdecas.es}), live in production, for generating the electronic transport control document (\textbf{DeCA}), mandatory in Spain since October 2026. Built with \textbf{Elixir}, \textbf{Phoenix} and \textbf{LiveView}: guided multi-step wizard with auto-fill, \textbf{QR} codes for roadside inspections, document version history and \textbf{PDF} delivery by email.
+}
+\cvitem{\textbf{TempusUGR}}{
+Final Degree Project awarded with \textbf{Highest Honors}. Microservices-based scheduling platform for students and teachers, developed over \textbf{one year} with \textbf{Java}, \textbf{Spring Boot} and \textbf{Spring Cloud}. \textbf{Dockerized} architecture with \textbf{Eureka} service discovery, load balancing and robust authentication, plus an \textbf{Angular} frontend. Deployed on a university faculty server.
+}
+\cvitem{\textbf{Cachopan}}{
+Buy-and-sell application for fish, developed over \textbf{six months}: \textbf{REST} backend in \textbf{Python} and \textbf{Flask}, and a cross-platform \textbf{Flutter} frontend. Deployed and actively maintained.
+}
+\vspace{-0.3cm}
+
+\section{Education}
+\cventry{\cvdate{2026 -- 2027}}{Master’s Degree in Software Development (IoT \& Digital Transformation)}{University of Granada}{in progress}{}{}
+\cventry{\cvdate{2021 -- 2025}}{Bachelor’s Degree in Computer Engineering}{University of Granada}{GPA: 8.4/10}{}{}
+\cventry{\cvdate{2019 -- 2021}}{Higher Technician in Telecommunications and Computer Systems}{IES Luis Bueno Crespo}{GPA: 9.3/10, First-Class Honours}{}{}
+\vspace{-0.3cm}
+
+\section{Skills}
+\cvitem{\textbf{Backend}}{\textbf{Elixir} (Phoenix, LiveView, Ecto, Oban) \textbullet{} \textbf{Java} (Spring Boot, Spring Cloud, Eureka, microservices) \textbullet{} \textbf{Python} (Flask, REST APIs)}
+\cvitem{\textbf{Cloud/DevOps}}{AWS (Lambda, API Gateway), Docker, Docker Compose, CI/CD, Git, Bash}
+\cvitem{\textbf{Databases}}{PostgreSQL, MySQL, MongoDB, DynamoDB}
+\cvitem{\textbf{Other}}{C, C++, Angular, Flutter, HTMX}
+\cvitem{\textbf{Languages}}{Spanish (Native), English (B2 -- Cambridge First Certificate)}
+\cvitem{\textbf{Certificates}}{Spring Boot Microservices \& Spring Cloud Eureka (2025) \textbullet{} JavaScript Algorithms and Data Structures \textbullet{} Cisco CCNA1 v7 \textbullet{} MOOC Bioinformatics, Big Data \& Machine Learning}
+
+\end{document}
